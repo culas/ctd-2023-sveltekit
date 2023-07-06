@@ -3,6 +3,7 @@
   import TalkDetail from "$lib/talk/TalkDetail.svelte";
   import FeedbackForm from "$lib/shared/FeedbackForm.svelte";
   import FeedbackBox from "$lib/feedback/FeedbackBox.svelte";
+  import { page } from "$app/stores";
 
   export let data: PageData;
 </script>
@@ -10,12 +11,14 @@
 <div class="p-5 pb-16">
   <TalkDetail talk={data.talk} contributors={data.contributors} />
 
-  <FeedbackForm />
+  {#key $page.url.pathname}
+    <FeedbackForm />
+  {/key}
 
   <p>Feedbacks</p>
   {#each data.feedbacks as feedback}
     <FeedbackBox {feedback} />
-    {:else}
+  {:else}
     <p class="italic text-gray-400">no feedbacks yet :(</p>
   {/each}
 </div>

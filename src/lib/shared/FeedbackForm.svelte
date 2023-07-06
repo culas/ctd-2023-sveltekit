@@ -1,9 +1,9 @@
 <script>
   import StarIcon from "$lib/shared/StarIcon.svelte";
-  import {enhance} from "$app/forms";
+  import { enhance } from "$app/forms";
 
   const ratings = [1, 2, 3, 4, 5];
-  const defaultRating = 3;
+  let defaultRating = 5;
 </script>
 <form method="POST" use:enhance class="my-5 pt-5 border-t-2">
   <p class="mb-2 font-bold">Feedback</p>
@@ -26,8 +26,7 @@
     <textarea name="comment" class="border-2 w-full mb-5"></textarea>
   </label>
 
-  <button class="bg-blue-600 hover:bg-blue-700 shadow-xl text-white px-3 py-2 rounded-full"
-  >
+  <button class="bg-blue-600 hover:bg-blue-700 shadow-md text-white px-3 py-2 rounded-full">
     Submit Feedback
   </button>
 </form>
