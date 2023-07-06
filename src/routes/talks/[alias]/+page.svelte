@@ -6,5 +6,5 @@
 </script>
 
 <div class="p-5">
-<TalkDetail talk={data.talk} contributors={data.contributors} />
+  <TalkDetail talk={data.talk} contributors={data.contributors} />
 </div>

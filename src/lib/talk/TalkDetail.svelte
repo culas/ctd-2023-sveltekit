@@ -13,7 +13,9 @@
   {formatTime(talk.time.end)}
 </div>
 
-<h1 class="text-xl font-bold my-5">{talk.name}</h1>
+<h1 class="text-xl font-bold mt-2 mb-5">{talk.name}</h1>
+
+<p class="border-2 rounded-full px-2">📍 {talk.room.name}</p>
 
 {#each contributors as contributor}
   <ContributorTile {contributor} />
