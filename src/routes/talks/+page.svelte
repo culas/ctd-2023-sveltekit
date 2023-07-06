@@ -1,1 +1,1 @@
-<p class="text-gray-500">Select entry from list for more details.</p>
+<p class="text-gray-400 text-center mt-20">Select entry from list for more details.</p>

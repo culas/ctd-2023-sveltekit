@@ -3,7 +3,7 @@
   import Navigation from "$lib/shared/Navigation.svelte";
 </script>
 
-<div class="flex min-h-screen">
+<div class="flex h-screen overflow-hidden">
   <aside class="self-stretch">
     <Navigation />
   </aside>

@@ -5,12 +5,12 @@
   export let data: PageData;
 </script>
 
-<div class="flex">
-  <div class="w-2/3">
+<div class="flex h-full overflow-hidden">
+  <div class="w-1/2 border-r-2 overflow-y-auto">
     <TalkListItem talks={data.talks} />
   </div>
 
-  <div class="w-1/3">
+  <div class="w-1/2 overflow-y-auto">
     <slot></slot>
   </div>
 </div>
