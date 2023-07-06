@@ -1,6 +1,10 @@
 {
   "name": "ctd2023-sveltekit",
   "version": "1.0.0",
+  "scripts": {
+    "api": "json-server --watch lineupr-data.json"
+  },
   "dependencies": {
+    "json-server": "^0.17.3"
   }
 }

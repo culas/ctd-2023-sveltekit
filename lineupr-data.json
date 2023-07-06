@@ -1,0 +1,122 @@
+{
+  "items": [
+    {
+      "time": {
+        "end": "2023-07-10T08:00:00.000Z",
+        "start": "2023-07-10T07:00:00.000Z"
+      },
+      "contributors": [],
+      "_id": "64899c6a33ec980007a17562",
+      "roomId": "649e9dbb6cccf6000703a597",
+      "name": "How to powershell",
+      "event": "648996d92afae6000794e6ab",
+      "descriptionHtml": "<div>Who uses PowerShell? Who wants to use PowerShell? Who \"has to\" use PowerShell?<br /> <br />Among people developing on Windows, the use of PowerShell (and which version at that) is a contentious topic. Replacing Windows' old batch files (.bat, .cmd, and others to a degree) with a new, arguably innovative and language, the seeming incompatibility with the existing Windows tool landscape and widespread command line tools like Posix-style CLIs, combined with the missing or minimalist (and often lackluster) ghost-doc style documentation certainly didn't help the user experience. Its launch was also not a stellar success, suffering from crashes, missing features and virtually no QOL. Even the promise to access the .NET Framework wasn't received too well by most people.<br /> <br />Allow me to introduce PowerShell 7+ to a skeptical, and potentially scarred, audience. Without delving too much into its history, I will show you how I use \"pwsh\" in a post-dotnet-core world in 2023 as a productivity tool and shell of choice on Windows, Linux (wsl and not), or even macOS. I will cover how I personally use it in conjunction with almost any other CLI I use daily, how to productively integrate it in any application, and how to customize it to your heart's content.<br /> <br />Of course, this talk will also be suited for people who already use/like pwsh to have a peek at how somebody else uses it.</div>",
+      "alias": "how-to-powershell",
+      "teaser": {
+        "sizes": {
+          "preview": "https://images.lineupr.com/023/17940d2396172ffbcc1fb2cc27b5d02b/669b47e8ad.jpeg",
+          "small": "https://images.lineupr.com/023/17940d2396172ffbcc1fb2cc27b5d02b/66ee533cb7.jpeg",
+          "original": "https://images.lineupr.com/023/17940d2396172ffbcc1fb2cc27b5d02b/original.jpeg"
+        }
+      }
+    },
+    {
+      "time": {
+        "end": "2023-07-10T09:50:00.000Z",
+        "start": "2023-07-10T08:50:00.000Z"
+      },
+      "contributors": [],
+      "_id": "6489a07e33ec980007a17e96",
+      "name": "Future-Proofing Your React Apps: Navigating the Big Ecosystem Changes",
+      "event": "648996d92afae6000794e6ab",
+      "alias": "future-proofing-your-react-app",
+      "descriptionHtml": "<div>How will our React apps look in three years? In recent months, significant changes in the React ecosystem have been announced. The React core team collaborates closely with Vercel to stabilize React Server Components. The new React docs recommend using meta frameworks over client-side-only toolchains like Create React App. Meanwhile, the creator of Webpack is working at Vercel on a new bundler called Turbopack. In this talk, I closely examine the latest tech and provide an orientation on coping with the changes in our projects.</div>",
+      "roomId": "649e9dbb6cccf6000703a598",
+      "teaser": {
+        "sizes": {
+          "preview": "https://images.lineupr.com/013/0ddc85980d2ea7a952e5e34f15222e08/be3cbe6a3e.png",
+          "small": "https://images.lineupr.com/013/0ddc85980d2ea7a952e5e34f15222e08/9da44f4ca0.png",
+          "original": "https://images.lineupr.com/013/0ddc85980d2ea7a952e5e34f15222e08/original.png"
+        }
+      }
+    },
+    {
+      "time": {
+        "end": "2023-07-10T12:30:00.000Z",
+        "start": "2023-07-10T12:10:00.000Z"
+      },
+      "contributors": [
+        "648996d92afae6000794e6c5"
+      ],
+      "_id": "6489a119d011f300063817a4",
+      "name": "SvelteKit crash course",
+      "event": "648996d92afae6000794e6ab",
+      "alias": "sveltekit-crash-course",
+      "descriptionHtml": "<div>SvelteKit 1.0 was released shortly before Christmas 2022. It's high time to take a look into how to start your next app with Svelte's app framework.</div>",
+      "roomId": "649e9dbb6cccf6000703a598",
+      "teaser": {
+        "sizes": {
+          "preview": "https://images.lineupr.com/026/1a073eea524f8551eb8c22c3a57e9721/35f0f5ca3d.png",
+          "small": "https://images.lineupr.com/026/1a073eea524f8551eb8c22c3a57e9721/3c8894d8eb.png",
+          "original": "https://images.lineupr.com/026/1a073eea524f8551eb8c22c3a57e9721/original.png"
+        }
+      }
+    },
+    {
+      "time": {
+        "end": "2023-07-11T12:50:00.000Z",
+        "start": "2023-07-11T12:20:00.000Z"
+      },
+      "contributors": ["64899ffdd011f300063814c7"],
+      "_id": "6489a44733ec980007a1883e",
+      "name": "Pondering the Orb: Tomorrow's CSS",
+      "roomId": "649e9dbb6cccf6000703a598",
+      "descriptionHtml": "<div>When we talk about the evolution of web technologies CSS is often overlooked. But there is a revolution upon us! New features are on the horizon or have already been shipped, changing the way CSS works and how we write it. Let's take a look into the future of CSS.</div>",
+      "alias": "pondering-the-orb-tomorrows-cs"
+    }
+  ],
+  "rooms": [
+    {
+      "_id": "648996d92afae6000794e6d4",
+      "name": "Piazza",
+      "alias": "piazza"
+    },
+    {
+      "_id": "649e9dbb6cccf6000703a597",
+      "name": "Multiplex 001",
+      "alias": "multiplex-001"
+    },
+    {
+      "_id": "649e9dbb6cccf6000703a598",
+      "name": "Multiplex 002",
+      "alias": "multiplex-002"
+    }
+  ],
+  "contributors": [
+    {
+      "_id": "648996d92afae6000794e6c5",
+      "teaser": {
+        "sizes": {
+          "preview": "https://images.lineupr.com/034/22596b40944ca7e523a4d83e0cc9ecdd/7e5d760646.png",
+          "small": "https://images.lineupr.com/034/22596b40944ca7e523a4d83e0cc9ecdd/c5916d7875.png",
+          "original": "https://images.lineupr.com/034/22596b40944ca7e523a4d83e0cc9ecdd/original.png"
+        },
+        "id": "648996d92afae6000794e6ee"
+      },
+      "name": "Lucas Schnüriger",
+      "subtitle": "Expert Software Engineer, Schlieren",
+      "descriptionHtml": "<div>Lucas Schnüriger is a software engineer and has been with Zühlke since February 2019. Before joining Zühlke, he graduated with a Bachelor's degree in Computer Science from the Lucerne University of Applied Sciences and Arts. During his studies he acquired a broad knowledge in mobile platforms, augmented reality and computer vision. However, his primary focus lays on web development with JavaScript and Java.</div>",
+      "alias": "lucas-schnueriger"
+    },
+    {
+      "_id": "64899ffdd011f300063814c7",
+      "teaser": null,
+      "name": "Jane Doe",
+      "subtitle": "Advanced Software Engineer, Schlieren",
+      "descriptionHtml": "<div>10x rock star developer.</div>",
+      "alias": "lucas-schnueriger"
+    }
+  ],
+  "feedbacks": [
+  ]
+}
