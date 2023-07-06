@@ -7,7 +7,7 @@
   ];
 </script>
 
-<nav class="bg-blue-600 text-white h-full w-52">
+<nav class="h-full w-52">
   <ul>
     {#each links as link}
       <li>

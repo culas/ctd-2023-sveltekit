@@ -4,11 +4,12 @@
 </script>
 
 <div class="flex h-screen overflow-hidden">
-  <aside class="self-stretch">
+  <aside class="self-stretch bg-blue-600 text-white">
+    <div class="text-xl p-4 font-bold">CTD 2023</div>
     <Navigation />
   </aside>
 
-  <main class="flex-grow">
+  <main class="flex-grow flex flex-col">
     <slot />
   </main>
 </div>
