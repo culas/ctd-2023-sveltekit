@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:on="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="UTF-8">
   <title>CTD 2023: SvelteKit Crash Course</title>
@@ -12,7 +12,7 @@
   <section class="title-slide">
     <h1>SvelteKit Crash Course</h1>
     <h2>Talk for the Zühlke Client Technology Days 2023 by Lucas Schnüriger</h2>
-    <h3>Introduction to Svelte and SvelteKit</h3>
+    <h3>A quick introduction to Svelte and SvelteKit</h3>
   </section>
 
   <section class="agenda">
@@ -53,11 +53,214 @@
     <section>
       <h2>Timeline</h2>
       <ul>
-        <li>first release in 2016</li>
-        <li>version 3 brought large changes: leaner syntax, reactivity</li>
-        <li>2020: SvelteKit announced as replacement for Sapper</li>
-        <li>official SvelteKit 1.0 release in December 2022</li>
+        <li>2016: first release of Svelte by Rich Harris</li>
+        <li>2019: version 3 brought large changes (e.g. leaner syntax, reactivity)</li>
+        <li>2020: SvelteKit announced as replacement/rewrite for the app framework Sapper</li>
+        <li>2022: Rich Harris gets <a href="https://vercel.com/blog/vercel-welcomes-rich-harris-creator-of-svelte">hired by Vercel</a> to work on Svelte full-time</li>
+        <li>2022: official <a href="https://svelte.dev/blog/announcing-sveltekit-1.0">SvelteKit 1.0 release</a> in December 2022</li>
       </ul>
+    </section>
+  </section>
+
+  <section>
+    <section class="subtitle-slide">
+      <h1>People & Community</h1>
+    </section>
+
+    <section>
+      <img src="rich-harris.jpeg" width="25%" alt="Rich Harris">
+      <h2>Rich Harris</h2>
+      <ul>
+        <li>creator of Ractive.js, Rollup and Svelte</li>
+        <li>worked at The Guardian and The New York Times</li>
+        <li>now at Vercel, working on Svelte fulltime</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Core Maintainers</h2>
+      <p>There are now nearly 30 <a href="https://github.com/orgs/sveltejs/people">core maintainers</a> working on Svelte in different capacities and areas (<a href="https://svelte.dev/blog/accelerating-sveltes-development#scaling-the-team">list as of January 2022</a>).</p>
+      <figure>
+        <img src="core-maintainers-2022.jpeg" width="50%" alt="Group selfie of some of the Svelte core maintainers in 2022">
+        <figcaption><small>Some of the core members at Svelte Summit Fall 2022</small></figcaption>
+      </figure>
+    </section>
+    <section>
+      <h2>Svelte + Vercel ▲</h2>
+      <p>3 of the core members work at Vercel:</p>
+      <ul>
+        <li>Rich Harris</li>
+        <li>Simon Holthausen (author of «Svelte: A Beginner's Guide»)</li>
+        <li>Dominic Gannaway (Inferno, Lexical, former React core member)</li>
+      </ul>
+      <p>But contrary to Next.js, Svelte is <strong>not</strong> owned by Vercel but by the open source community.</p>
+      <p>Some of the work is financed with donations through <a href="https://opencollective.com/svelte">Open Collective</a>.</p>
+    </section>
+
+    <section>
+      <img style="position:absolute;z-index:-1;top:0;left:0;opacity:.1" src="svelte-society-logo.svg" alt="Svelte Society Logo">
+      <h2>Community</h2>
+      <p>The Svelte community is smaller in comparison but very well organised.</p>
+      <p>A lot of activity is based around the <a href="https://sveltesociety.dev">Svelte Society</a>: conferences, events, recipes and other resources.</p>
+      <p>Among the events is <a href="https://www.sveltesummit.com">Svelte Summit</a>: the biggest Svelte conference, which takes place twice a year in spring and fall.</p>
+      <p>Smaller talks and events are regularly held on <a href="https://www.youtube.com/channel/UCZSr5B0l07JXK2FIeWA0-jw">their YouTube channel</a> and in the <a href="https://svelte.dev/chat">official Svelte Discord channel</a>.</p>
+    </section>
+  </section>
+
+  <section>
+    <section class="subtitle-slide">
+      <h1>Concepts</h1>
+    </section>
+
+    <section>
+      <h2>Key Concepts of Svelte</h2>
+      <ul>
+        <li>compiled to optimised vanilla JS, no runtime library</li>
+        <li>single-file components, with scoped CSS</li>
+        <li>syntax close to the native web (HTML, CSS, JS)</li>
+        <li>easy reactivity and state management</li>
+        <li>little to no boilerplate code</li>
+      </ul>
+    </section>
+
+    <section class="statement-slide">
+      <h1>Svelte is often called</h1>
+      <h2>«the framework that disappears»</h2>
+    </section>
+
+    <section>
+      <h2>Example</h2>
+      <pre><code contenteditable data-trim>
+        <script>
+          let count = 0;
+
+          function handleClick() {
+            count += 1;
+          }
+        </script>
+
+        <button on:click={handleClick}>
+          Clicked {count}
+          {count === 1 ? 'time' : 'times'}
+        </button>
+
+        <style>
+          button {
+            font-size: 1em;
+          }
+        </style>
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Syntax</h2>
+      <p>Svelte is a superset of the «web»:</p>
+      <ul>
+        <li>extends <strong>HTML</strong> by adding JS expressions (double curly braces)</li>
+        <li>extends <strong>CSS</strong> by adding scoping mechanisms</li>
+        <li>extends <strong>JS</strong> by making reactivity a language primitive</li>
+      </ul>
+      <p>An empty <code>*.svelte</code> file is already a valid Svelte component, where the filename defines the component tag name.</p>
+    </section>
+  </section>
+
+  <section>
+    <section class="subtitle-slide">
+      <h1>Meta Frameworks</h1>
+    </section>
+
+    <section>
+      <h2>Examples</h2>
+      <p>Often also called «full-stack frameworks».</p>
+      <p>What makes them «meta» has nothing to do with the metaverse but with the fact that they include other frameworks:</p>
+      <ul>
+        <li>Next.js and Remix are built on top of React</li>
+        <li>Nuxt combines these concepts with Vue</li>
+        <li>SolidStart uses SolidJS</li>
+        <li>Astro is even framework-agnostic and allows integration with a whole range of technologies</li>
+        <li>SvelteKit is the official way to build Svelte apps</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Typical Features</h2>
+      <ul>
+        <li>routing and layouting</li>
+        <li>Static Site Generation (SSG) and Server Side Rendering (SSR)</li>
+        <li>data fetching, server endpoints</li>
+        <li>sensible configuration defaults (zero config)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Use Cases</h2>
+      <p>Their SSG/SSR capabilities to help with SEO and performance are a major selling point.</p>
+      <p>But you can easily build single-page applications (SPA) with them and still benefit from other advantages.</p>
+      <p>My 🔥 take: meta frameworks should be the default for most cases.</p>
+      <p>SvelteKit is the default way to create Svelte apps now. You don't get any additional complexity or difficulty if you don't need advanced features.</p>
+    </section>
+  </section>
+
+  <section>
+    <section class="subtitle-slide">
+      <h1>SvelteKit</h1>
+    </section>
+
+    <section>
+      <h2>Features</h2>
+      <ul>
+        <li>mix and matching rendering methods for each page: SSG (prerendered), SSR (default), CSR (SPA mode)
+        <li>accessible client-side routing with automatic preloading</li>
+        <li>filesystem-based routes with nested layouts</li>
+        <li>server endpoints</li>
+        <li>environment variable handling</li>
+        <li>type-safe data loading</li>
+        <li>built-in form actions that work with or without JS</li>
+        <li>automatic CSRF protection</li>
+        <li>for libraries as well as web apps</li>
+        <li>deploy anywhere with adapters</li>
+      </ul>
+    </section>
+
+    <section class="statement-slide">
+      <h1>SvelteKit Demo app:</h1>
+      <h2>LineUpr clone</h2>
+    </section>
+  </section>
+
+  <section>
+    <section class="subtitle-slide">
+      <h1>Sources & Resources</h1>
+    </section>
+
+    <section>
+      <h2>Sources</h2>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Svelte">Wikipedia: Svelte</a></li>
+        <li><a href="https://github.com/orgs/sveltejs/people">GitHub sveltejs members</a></li>
+        <li><a href="https://svelte.dev/blog/accelerating-sveltes-development">Svelte Blog: Accelerating Svelte's Development</a></li>
+        <li><a href="https://www.ombulabs.com/blog/javascript/what-is-a-javascript-meta-framework.html">Blog:What is a JavaScript Meta-framework?</a></li>
+        <li><a href="https://twitter.com/Rich_Harris/">Rich Harris on Twitter</a></li>
+        <li>Group image of some of the core maintainers at Svelte Summit Fall in 2022: <a href="https://twitter.com/Rich_Harris/status/1567958480455356416">Tweet</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Additional Resources</h2>
+      <ul>
+        <li>Official Tutorial: <a href="https://learn.svelte.dev/">learn.svelte.dev</a></li>
+        <li>Official Docs: <a href="https://svelte.dev/docs/">Svelte</a>, <a href="https://kit.svelte.dev/docs/">SvelteKit</a></li>
+        <li><a href="https://vercel.com/solutions/svelte">Svelte Beginner Course by Vercel</a></li>
+        <li><a href="https://sveltesociety.dev">Svelte Society</a></li>
+        <li>Rich Harris at «You Gotta Love Fontend 2019»: <a href="https://www.youtube.com/watch?v=AdNJ3fydeao">Rethinking Reactivity</a></li>
+        <li>FrontendMasters course: <a href="https://frontendmasters.com/courses/svelte-v2/">Svelte Fundamentals</a> (by Rich Harris)</li>
+      </ul>
+    </section>
+  </section>
+
+  <section>
+    <section class="break-slide">
+      <h1>Thank you for listening!</h1>
     </section>
   </section>
 </div>
