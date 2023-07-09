@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { PageData } from "./$types";
   import TalkDetail from "$lib/talk/TalkDetail.svelte";
-  import FeedbackForm from "$lib/shared/FeedbackForm.svelte";
+  import FeedbackForm from "$lib/feedback/FeedbackForm.svelte";
   import FeedbackBox from "$lib/feedback/FeedbackBox.svelte";
   import { page } from "$app/stores";
 

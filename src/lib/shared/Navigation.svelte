@@ -1,5 +1,4 @@
 <script>
-
   const links = [
     { href: "/", name: "Home" },
     { href: "/talks", name: "Schedule" },
