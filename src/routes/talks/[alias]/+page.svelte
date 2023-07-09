@@ -11,11 +11,13 @@
 <div class="p-5 pb-16">
   <TalkDetail talk={data.talk} contributors={data.contributors} />
 
+  <hr class="border-t-2 my-5">
+
   {#key $page.url.pathname}
     <FeedbackForm />
   {/key}
 
-  <p>Feedbacks</p>
+  <p class="font-bold mt-5">Feedbacks</p>
   {#each data.feedbacks as feedback}
     <FeedbackBox {feedback} />
   {:else}
