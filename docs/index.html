@@ -54,17 +54,27 @@
       <h2>Timeline</h2>
       <ul>
         <li>2016: first release of Svelte by Rich Harris</li>
-        <li>2019: version 3 brought large changes (e.g. leaner syntax, reactivity)</li>
-        <li>2020: SvelteKit announced as replacement/rewrite for the app framework Sapper</li>
-        <li>2022: Rich Harris gets <a href="https://vercel.com/blog/vercel-welcomes-rich-harris-creator-of-svelte">hired by Vercel</a> to work on Svelte full-time</li>
-        <li>2022: official <a href="https://svelte.dev/blog/announcing-sveltekit-1.0">SvelteKit 1.0 release</a> in December 2022</li>
+        <li>2019: version 3 brought large changes</li>
+        <li>2020: SvelteKit announced as replacement for Sapper</li>
+        <li>2022: Rich Harris gets <a href="https://vercel.com/blog/vercel-welcomes-rich-harris-creator-of-svelte">hired by Vercel</a> to work on Svelte</li>
+        <li>2022: official <a href="https://svelte.dev/blog/announcing-sveltekit-1.0">SvelteKit 1.0 release</a> in December</li>
       </ul>
+      <aside class="notes">
+        <ul>
+          <li>version 3: leaner syntax, today's reactivity system</li>
+          <li>Sapper was the initial app framework for Svelte and the predecessor of SvelteKit</li>
+          <li>SvelteKit was release after a long beta phase to make sure "they get it right"</li>
+        </ul>
+      </aside>
     </section>
   </section>
 
   <section>
     <section class="subtitle-slide">
       <h1>People & Community</h1>
+      <aside class="notes">
+        I've been asked whether this is mainly a one-man-show?
+      </aside>
     </section>
 
     <section>
@@ -73,8 +83,11 @@
       <ul>
         <li>creator of Ractive.js, Rollup and Svelte</li>
         <li>worked at The Guardian and The New York Times</li>
-        <li>now at Vercel, working on Svelte fulltime</li>
+        <li>now at Vercel, working on Svelte full-time</li>
       </ul>
+      <aside class="notes">
+        Ractive.js is considered a predecessor of Svelte and was also a big inspiration for Vue
+      </aside>
     </section>
 
     <section>
@@ -91,19 +104,32 @@
       <ul>
         <li>Rich Harris</li>
         <li>Simon Holthausen (author of «Svelte: A Beginner's Guide»)</li>
-        <li>Dominic Gannaway (Inferno, Lexical, former React core member)</li>
+        <li>Dominic Gannaway (ex-React core member, Inferno, Lexical)</li>
       </ul>
-      <p>But contrary to Next.js, Svelte is <strong>not</strong> owned by Vercel but by the open source community.</p>
-      <p>Some of the work is financed with donations through <a href="https://opencollective.com/svelte">Open Collective</a>.</p>
+      <p>Contrary to Next.js, Svelte is <strong>not</strong> owned by <a href="https://vercel.com/blog/vercel-welcomes-rich-harris-creator-of-svelte">Vercel</a> or any company.</p>
+      <p>Some work is financed with donations through <a href="https://opencollective.com/svelte">Open Collective</a>.</p>
+      <aside class="notes">
+        <ul>
+          <li>Simon also maintains the Svelte language-tools</li>
+          <li>Dominic joined in 2023</li>
+        </ul>
+        <p>Contrary to Next.js, Svelte is <strong>not</strong> owned by Vercel but by the open source community. Vercel has clearly stated that Svelte's governance stays independent and open source.</p>
+      </aside>
     </section>
 
     <section>
       <img style="position:absolute;z-index:-1;top:0;left:0;opacity:.1" src="svelte-society-logo.svg" alt="Svelte Society Logo">
       <h2>Community</h2>
-      <p>The Svelte community is smaller in comparison but very well organised.</p>
-      <p>A lot of activity is based around the <a href="https://sveltesociety.dev">Svelte Society</a>: conferences, events, recipes and other resources.</p>
-      <p>Among the events is <a href="https://www.sveltesummit.com">Svelte Summit</a>: the biggest Svelte conference, which takes place twice a year in spring and fall.</p>
-      <p>Smaller talks and events are regularly held on <a href="https://www.youtube.com/channel/UCZSr5B0l07JXK2FIeWA0-jw">their YouTube channel</a> and in the <a href="https://svelte.dev/chat">official Svelte Discord channel</a>.</p>
+      <p>The community is smaller in comparison but very well organised.</p>
+      <p>A lot of activity is based around «<a href="https://sveltesociety.dev">Svelte Society</a>».</p>
+      <p>Among the events is the biannual <a href="https://www.sveltesummit.com">Svelte Summit</a> conference.</p>
+      <p>Smaller talks and events are regularly held on <a href="https://www.youtube.com/channel/UCZSr5B0l07JXK2FIeWA0-jw">their YouTube channel</a> and in the <a href="https://svelte.dev/chat">official Svelte Discord server</a>.</p>
+      <p><a href="https://sveltesirens.dev">Svelte Sirens</a> focus on supporting women and non-binary people.</p>
+      <aside class="notes">
+        <p>«Svelte Society»: conferences, events, recipes, podcasts and other resources.</p>
+        <p>«Svelte Summit»: the biggest Svelte conference, which takes place twice a year in spring and fall.</p>
+        <p>Svelte Sirens were inspired by similar groups like Vue Vixens and React Robins. They are very active, organising a lot of talks. The boundaries between the different groups are very fluid.</p>
+      </aside>
     </section>
   </section>
 
@@ -121,11 +147,18 @@
         <li>easy reactivity and state management</li>
         <li>little to no boilerplate code</li>
       </ul>
+      <aside class="notes">
+        <p>Their own slogan is «cybernetically enhanced web apps».</p>
+        <p>For me, learning and writing Svelte apps has made me more excited about web development than any other technology since I discovered JS all these years ago. It truly feels like you're just writing for the web and not for a specific framework.</p>
+      </aside>
     </section>
 
     <section class="statement-slide">
       <h1>Svelte is often called</h1>
       <h2>«the framework that disappears»</h2>
+      <aside class="notes">
+        <p>Svelte is often called «the framework that disappears». Quite literally in production due to its compiled nature, but also in development. It's not in the way, it's not forcing unnecessary boilerplate on you. Therefore Svelte is incredibly easy to learn and very powerful at the same time.</p>
+      </aside>
     </section>
 
     <section>
@@ -150,17 +183,32 @@
           }
         </style>
       </code></pre>
+      <aside class="notes">
+        <p>This is basically an HTML file. The script tag with just plain JavaScript, nothing special there at all.</p>
+        <p>Then there's a button with a little special on-click handler Syntax, but quite close to the native onclick attribute. Inside curly braces we can write any JS expression.</p>
+        <p>And then the style tag is again just as it could be written in plain HTML & CSS.</p>
+      </aside>
     </section>
 
     <section>
       <h2>Syntax</h2>
       <p>Svelte is a superset of the «web»:</p>
       <ul>
-        <li>extends <strong>HTML</strong> by adding JS expressions (double curly braces)</li>
+        <li>extends <strong>HTML</strong> by adding JS expressions (curly braces)</li>
         <li>extends <strong>CSS</strong> by adding scoping mechanisms</li>
         <li>extends <strong>JS</strong> by making reactivity a language primitive</li>
       </ul>
-      <p>An empty <code>*.svelte</code> file is already a valid Svelte component, where the filename defines the component tag name.</p>
+      <p class="fragment tip">Fun fact: an empty <code>*.svelte</code> file is already a valid Svelte component.</p>
+      <aside class="notes">
+        <p>The syntax is essentially plain HTML, CSS and JavaScript with a little bit of extras on top.</p>
+        <p>Regarding the fun fact: The filename defines the component tag name.</p>
+      </aside>
+    </section>
+
+    <section class="statement-slide">
+      <h1>Technically, one could argue:</h1>
+      <h2>Svelte is a language, not a framework</h2>
+      <aside class="notes">Rich Harris did exactly that in a blog post. Essentially: Svelte extends the languages of the web and has a compiler. That's why it feels so natural to write apps with Svelte.</aside>
     </section>
   </section>
 
@@ -171,8 +219,8 @@
 
     <section>
       <h2>Examples</h2>
-      <p>Often also called «full-stack frameworks».</p>
-      <p>What makes them «meta» has nothing to do with the metaverse but with the fact that they include other frameworks:</p>
+      <p>a.k.a. «JavaScript full-stack frameworks».</p>
+      <p>What makes them «meta» is that they include other frameworks:</p>
       <ul>
         <li>Next.js and Remix are built on top of React</li>
         <li>Nuxt combines these concepts with Vue</li>
@@ -180,6 +228,9 @@
         <li>Astro is even framework-agnostic and allows integration with a whole range of technologies</li>
         <li>SvelteKit is the official way to build Svelte apps</li>
       </ul>
+      <aside class="notes">
+        <p>What makes them «meta» has nothing to do with the metaverse but with the fact that they include other frameworks:</p>
+      </aside>
     </section>
 
     <section>
@@ -194,10 +245,14 @@
 
     <section>
       <h2>Use Cases</h2>
-      <p>Their SSG/SSR capabilities to help with SEO and performance are a major selling point.</p>
+      <p>SSG/SSR are a major selling point for SEO and performance.</p>
       <p>But you can easily build single-page applications (SPA) with them and still benefit from other advantages.</p>
-      <p>My 🔥 take: meta frameworks should be the default for most cases.</p>
+      <p>My 🔥? take: meta frameworks should be the default in most cases.</p>
       <p>SvelteKit is the default way to create Svelte apps now. You don't get any additional complexity or difficulty if you don't need advanced features.</p>
+      <aside class="notes">
+        <p>Their SSG/SSR capabilities to help with SEO and performance are a major selling point.</p>
+        <p>Even the React team now recommends using Next.js to create a React app.</p>
+      </aside>
     </section>
   </section>
 
@@ -209,17 +264,24 @@
     <section>
       <h2>Features</h2>
       <ul>
-        <li>mix and matching rendering methods for each page: SSG (prerendered), SSR (default), CSR (SPA mode)
+        <li>mix and matching rendering methods for each page</li>
         <li>accessible client-side routing with automatic preloading</li>
         <li>filesystem-based routes with nested layouts</li>
-        <li>server endpoints</li>
         <li>environment variable handling</li>
         <li>type-safe data loading</li>
         <li>built-in form actions that work with or without JS</li>
         <li>automatic CSRF protection</li>
-        <li>for libraries as well as web apps</li>
+        <li>can be used for libraries as well as web apps</li>
         <li>deploy anywhere with adapters</li>
       </ul>
+      <aside class="notes">
+        <p>Rendering methods:</p>
+        <ul>
+          <li>SSG (static site generation, prerendered)</li>
+          <li>SSR (server side rendering, default)</li>
+          <li>CSR (client side rendering, SPA mode)</li>
+        </ul>
+      </aside>
     </section>
 
     <section class="statement-slide">
@@ -261,6 +323,7 @@
   <section>
     <section class="break-slide">
       <h1>Thank you for listening!</h1>
+      <h2>I'm always happy to answer questions regarding Svelte.</h2>
     </section>
   </section>
 </div>
