@@ -1,5 +1,4 @@
 export interface Talk {
-	_id: string;
 	name: string;
 	alias: string;
 	descriptionHtml: string;
@@ -8,7 +7,6 @@ export interface Talk {
 		end: string;
 	};
 	contributors: string[];
-	categories: string[];
 	room: {
 		name: string;
 	};
@@ -19,10 +17,4 @@ export interface Talk {
 			original: string;
 		};
 	};
-	feedback: [
-		{
-			rating: string;
-			comment: string;
-		}
-	];
 }
