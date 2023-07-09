@@ -1,5 +1,5 @@
 <script lang="ts">
-  import TalkListItem from "$lib/talk/TalksList.svelte";
+  import TalksList from "$lib/talk/TalksList.svelte";
   import type { PageData } from "./$types";
   import PageTitle from "$lib/shared/PageTitle.svelte";
 
@@ -10,7 +10,7 @@
   <div class="flex flex-col w-1/2 border-r-2">
     <PageTitle>Schedule</PageTitle>
     <div class="overflow-y-auto">
-      <TalkListItem talks={data.talks} />
+      <TalksList talks={data.talks} />
     </div>
   </div>
 

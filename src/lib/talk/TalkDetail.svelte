@@ -9,8 +9,7 @@
 </script>
 
 <div class="text-gray-500 text-sm">
-  {formatTime(talk.time.start)} –
-  {formatTime(talk.time.end)}
+  {formatTime(talk.time.start)} – {formatTime(talk.time.end)}
 </div>
 
 <h1 class="text-xl font-bold mt-2 mb-5">{talk.name}</h1>
