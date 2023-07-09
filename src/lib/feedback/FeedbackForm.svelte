@@ -1,8 +1,7 @@
 <script>
-  import { enhance } from "$app/forms";
   import RatingForm from "$lib/shared/RatingForm.svelte";
 </script>
-<form method="POST" use:enhance>
+<form method="POST">
   <p class="mb-2 font-bold">Feedback</p>
 
   <RatingForm min={1} max={5} initial={5} />
