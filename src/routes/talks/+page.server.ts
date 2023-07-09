@@ -1,8 +1,8 @@
 import { API_URL } from '$env/static/private';
 import type { Talk } from '$lib/talk/talk.model';
-import type { LayoutServerLoadEvent } from './$types';
+import type { PageServerLoadEvent } from './$types';
 
-export async function load({ fetch }: LayoutServerLoadEvent) {
+export async function load({ fetch }: PageServerLoadEvent) {
 	const res = await fetch(`${API_URL}/items?_expand=room`);
 	const talks: Talk[] = await res.json();
 	return { talks };
