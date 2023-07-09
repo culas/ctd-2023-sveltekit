@@ -15,17 +15,3 @@ export async function load({ fetch, params }: PageServerLoadEvent) {
 	);
 	return { talk, contributors, feedbacks };
 }
-
-export const actions: Actions = {
-	default: async ({ fetch, params, request }) => {
-		const formData = await request.formData();
-		const comment = formData.get('comment');
-		const rating = formData.get('rating');
-		let body = JSON.stringify({ itemAlias: params.alias, rating, comment });
-		await fetch(`${API_URL}/feedbacks`, {
-			method: 'POST',
-			body,
-			headers: new Headers({ 'Content-Type': 'application/json' })
-		});
-	}
-};
